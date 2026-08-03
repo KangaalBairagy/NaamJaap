@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Mobile Apps - Download Center</title>
+
+    <link rel="icon" type="image/png" href="image/naamjaap.png">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        bengali: ['"Hind Siliguri"', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#1a73e8',
+                        success: '#34a853',
+                    }
+                }
+            }
+        }
+
+
+
+
+    </script>
+
+</head>
+
+<body class="bg-gray-100 text-gray-700 min-h-screen flex flex-col font-bengali">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md py-10 px-5">
+
+        <div class="max-w-6xl mx-auto text-center">
+
+            <h1 class="text-4xl md:text-5xl font-bold text-primary">
+                📱 Mobile Apps
+            </h1>
+
+            <p class="mt-4 max-w-2xl mx-auto text-gray-600 text-lg leading-relaxed">
+                Download our free educational and spiritual app to increase your knowledge and practice daily.
+            </p>
+
+        </div>
+
+    </header>
+
+    <!-- App Cards -->
+    <section class="max-w-6xl mx-auto px-5 py-12">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <!-- New Version -->
+            <div
+                class="bg-white rounded-2xl shadow-md border border-gray-200 p-8 text-center hover:-translate-y-2 hover:shadow-xl transition duration-300">
+
+                <h2 class="text-2xl font-bold text-gray-800 mb-2">
+                    📿 Naam Jap Counter
+                </h2>
+
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">
+                    📘 New Version
+                </h3>
+
+                <p class="text-gray-600 leading-7 mb-8">
+                    Easily track your mantra chanting. Clean and calm interface.
+                </p>
+
+                <a href="https://github.com/yogibairagy/naamjap/raw/main/app-arm64-v8a-release.apk"
+                    class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-full transition duration-300">
+
+                    📥 Download New APK
+
+                </a>
+
+            </div>
+
+            <!-- Old Version -->
+            <div
+                class="bg-white rounded-2xl shadow-md border border-gray-200 p-8 text-center hover:-translate-y-2 hover:shadow-xl transition duration-300">
+
+                <h2 class="text-2xl font-bold text-gray-800 mb-2">
+                    📿 Naam Jap Counter
+                </h2>
+
+                <h3 class="text-xl font-semibold text-blue-600 mb-4">
+                    📘 Old Version
+                </h3>
+
+                <p class="text-gray-600 leading-7 mb-8">
+                    Easily track your mantra chanting. Clean and calm interface.
+                </p>
+
+                <a href="https://github.com/yogibairagy/naamjap/raw/main/app-armeabi-v7a-release.apk"
+                    class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-full transition duration-300">
+
+                    📥 Download Old APK
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Dashboard Guide -->
+    <section class="max-w-7xl mx-auto px-5 py-16">
+        <div class="flex justify-center gap-3 mb-8">
+
+            <button onclick="showLanguage('english',this)" class="lang-btn bg-blue-600 text-white px-5 py-2 rounded-lg">
+                English
+            </button>
+
+            <button onclick="showLanguage('bengali',this)" class="lang-btn bg-gray-200 px-5 py-2 rounded-lg">
+                বাংলা
+            </button>
+
+            <button onclick="showLanguage('hindi',this)" class="lang-btn bg-gray-200 px-5 py-2 rounded-lg">
+                हिन्दी
+            </button>
+
+        </div>
+        <div class="bg-white rounded-3xl shadow-lg p-8 language english">
+
+            <h2 class="text-3xl font-bold text-center text-gray-800">
+                📱 App functions and features
+            </h2>
+
+            <p class="text-center text-gray-500 mt-3 mb-12">
+                How our app's menus and functions work
+            </p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+                <!-- Card 1 -->
+                <div  class="bg-white  rounded-2xl shadow p-6 hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                    <div class="flex items-center gap-4 mb-5">
+                        <div class="text-4xl bg-blue-100 rounded-xl p-3">
+                            📿
+                        </div>
+
+                        <h3 class="text-2xl font-semibold text-gray-800">
+                            Naam Japa
+                        </h3>
+                    </div>
+
+                    <p class="text-gray-600 mb-4">
+                        This page is a virtual Naam Japa page. There are 4 buttons below.
+                    </p>
+
+                    <ul class="space-y-4 text-gray-600 list-disc list-inside">
+
+                        <li>
+                            <strong>Buttons 1, 2, 3:</strong>
+These are <strong>Krisna</strong>,
+                            <strong>Hare</strong> and
+                            <strong>Rama</strong>।
+                        </li>
+
+                        <li>
+                            <strong>Correct order:</strong>
+You have to complete the Mahamantra by pressing the buttons in the correct order.
+                        </li>
+
+                        <li>
+                            <strong>If correct:</strong>
+A chant will be counted when the entire Mahamantra is completed.
+                        </li>
+
+                        <li>
+                            <strong>Delete Button:</strong>
+                            If it is wrong, it will delete the last word.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="bg-white rounded-2xl shadow p-6 hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                    <div class="flex items-center gap-4 mb-5">
+
+                        <div class="text-4xl bg-blue-100 rounded-xl p-3">
+                            📊
+                        </div>
+
+                        <h3 class="text-2xl font-semibold text-gray-800">
+                            Japa Count 
+                        </h3>
+
+                    </div>
+
+                    <p class="text-gray-600 mb-4">
+                        You can see your daily progress here.
+                    </p>
+
+                    <ul class="space-y-3 text-gray-600 list-disc list-inside">
+
+                        <li>
+                            <strong>Today's</strong>  Japa number.
+                        </li>
+
+                        <li>
+                            <strong>Weekly</strong> Total number of Japa
+                        </li>
+
+                        <li>
+                            <strong>Monthly</strong> Total number of Japa.
+                        </li>
+
+                        <li>
+                            <strong>All Time</strong> Total number of Japa।
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="bg-white rounded-2xl shadow p-6 hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                    <div class="flex items-center gap-4 mb-5">
+
+                        <div class="text-4xl bg-blue-100 rounded-xl p-3">
+                            📘
+                        </div>
+
+                        <h3 class="text-2xl font-semibold text-gray-800">
+                            Question Answer
+                        </h3>
+
+                    </div>
+
+                    <p class="text-gray-600 mb-4">
+                        This section is designed for study.
+                    </p>
+
+                    <ul class="space-y-3 text-gray-600 list-disc list-inside">
+
+                        <li>
+                            Summaries of all topics will be available.
+                        </li>
+
+                        <li>
+                            MCQs for each topic can be practiced.
+                        </li>
+
+                        <li>
+                            The correct answer will be displayed immediately.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Card 4 -->
+                <div class=" rounded-2xl shadow p-6 hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                    <div class="flex items-center gap-4 mb-5">
+
+                        <div class="text-4xl bg-white rounded-xl p-3">
+                            📝
+                        </div>
+
+                        <h3 class="text-2xl font-semibold text-gray-800">
+                            Description
+                        </h3>
+
+                    </div>
+
+                    <p class="text-gray-700 leading-8">
+                        Clicking this button will provide information about the purpose of the app,
+the developer's profile, and
+detailed instructions for using the app.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Bengli -->
+        <div class="bg-white rounded-3xl shadow-lg p-8 language bengali hidden">
+
+            <h2 class="text-3xl font-bold text-center text-gray-800">
+                📱 অ্যাপের কাজ ও বৈশিষ্ট্যসমূহ
+            </h2>
+
+            <p class="text-center text-gray-500 mt-3 mb-12">
+                আমাদের অ্যাপের মেনু এবং ফাংশনগুলো যেভাবে কাজ করে
+            </p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+                <!-- Card 1 -->
+                <div
+                    class="bg-white  rounded-2xl shadow p-6 hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                    <div class="flex items-center gap-4 mb-5">
+                        <div class="text-4xl bg-blue-100 rounded-xl p-3">
+                            📿
+                        </div>
+
+                        <h3 class="text-2xl font-semibold text-gray-800">
+                            নামজপ 
+                        </h3>
+                    </div>
+
+                    <p class="text-gray-600 mb-4">
+                        এই পেজটি ভার্চুয়াল নাম জপ । নিচে ৪টি বাটন আছে।
+                    </p>
+
+                    <ul class="space-y-4 text-gray-600 list-disc list-inside">
+
+                        <li>
+                            <strong>১, ২, ৩ নম্বর বাটন:</strong>
+                            এগুলো হলো <strong>কৃষ্ণ</strong>,
+                            <strong>হরে</strong> এবং
+                            <strong>রাম</strong>।
+                        </li>
+
+                        <li>
+                            <strong>সঠিক ক্রম:</strong>
+                            আপনাকে সঠিক ক্রমে বাটন চেপে মহামন্ত্রটি পূর্ণ করতে হবে।
+                        </li>
+
+                        <li>
+                            <strong>সঠিক হলে:</strong>
+                            পুরো মহামন্ত্রটি সম্পূর্ণ হলে একটি
+                            <strong>জপ</strong> গণনা হবে।
+                        </li>
+
+                        <li>
+                            <strong>Delete Button:</strong>
+                            ভুল হলে শেষ শব্দটি মুছে ফেলবে।
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="bg-white rounded-2xl shadow p-6 hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                    <div class="flex items-center gap-4 mb-5">
+
+                        <div class="text-4xl bg-blue-100 rounded-xl p-3">
+                            📊
+                        </div>
+
+                        <h3 class="text-2xl font-semibold text-gray-800">
+                            জপ গণনা 
+                        </h3>
+
+                    </div>
+
+                    <p class="text-gray-600 mb-4">
+                        আপনার প্রতিদিনের অগ্রগতির হিসাব এখানে দেখতে পাবেন।
+                    </p>
+
+                    <ul class="space-y-3 text-gray-600 list-disc list-inside">
+
+                        <li>
+                            <strong>আজকের জপ</strong> কতবার করেছেন।
+                        </li>
+
+                        <li>
+                            <strong>সাপ্তাহিক</strong> মোট জপ সংখ্যা।
+                        </li>
+
+                        <li>
+                            <strong>মাসিক</strong> মোট জপ সংখ্যা।
+                        </li>
+
+                        <li>
+                            <strong>All Time</strong> সর্বমোট জপ সংখ্যা।
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="bg-white rounded-2xl shadow p-6 hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                    <div class="flex items-center gap-4 mb-5">
+
+                        <div class="text-4xl bg-blue-100 rounded-xl p-3">
+                            📘
+                        </div>
+
+                        <h3 class="text-2xl font-semibold text-gray-800">
+                            প্রশ্ন উত্তর 
+                        </h3>
+
+                    </div>
+
+                    <p class="text-gray-600 mb-4">
+                        জ্ঞান অর্জনের জন্য এই সেকশনটি সাজানো হয়েছে।
+                    </p>
+
+                    <ul class="space-y-3 text-gray-600 list-disc list-inside">
+
+                        <li>
+                            সকল টপিকের Summary পাওয়া যাবে।
+                        </li>
+
+                        <li>
+                            প্রতিটি টপিকের MCQ অনুশীলন করা যাবে।
+                        </li>
+
+                        <li>
+                            সঠিক উত্তর সঙ্গে সঙ্গে দেখা যাবে।
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Card 4 -->
+                <div class=" rounded-2xl shadow p-6 hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                    <div class="flex items-center gap-4 mb-5">
+
+                        <div class="text-4xl bg-white rounded-xl p-3">
+                            📝
+                        </div>
+
+                        <h3 class="text-2xl font-semibold text-gray-800">
+                            বিস্তারিত
+                        </h3>
+
+                    </div>
+
+                    <p class="text-gray-700 leading-8">
+                        এই বাটনে ক্লিক করলে অ্যাপটির উদ্দেশ্য,
+                        ডেভেলপার পরিচিতি এবং
+                        অ্যাপ ব্যবহারের বিস্তারিত নির্দেশনা পাওয়া যাবে।
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--Hindi-->
+        <div class="bg-white rounded-3xl shadow-lg p-8 language hindi hidden">
+
+            <h2 class="text-3xl font-bold text-center text-gray-800">
+                📱 ऐप के फ़ंक्शन और फ़ीचर
+            </h2>
+
+            <p class="text-center text-gray-500 mt-3 mb-12">
+                हमारे ऐप के मेनू और फ़ंक्शन कैसे काम करते हैं
+            </p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+                <!-- Card 1 -->
+                 
+                <div class="bg-white rounded-2xl shadow p-6 hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                    <div class="flex items-center gap-4 mb-5">
+                        <div class="text-4xl bg-blue-100 rounded-xl p-3">
+                            📿
+                        </div>
+
+                        <h3 class="text-2xl font-semibold text-gray-800">
+                            जाप
+                        </h3>
+                    </div>
+
+                    <p class="text-gray-600 mb-4">
+                        यह पेज एक वर्चुअल नाम जप है। नीचे 4 बटन हैं।
+                    </p>
+
+                    <ul class="space-y-4 text-gray-600 list-disc list-inside">
+
+                        <li>
+                            <strong>बटन 1, 2, 3:</strong>
+                            ये हैं<strong>कृष्ण, </strong>
+                                <strong>हरे</strong> और
+                                <strong>राम</strong>
+                        </li>
+
+                        <li>
+                            <strong>सही क्रम:</strong>
+                            आपको सही क्रम में बटन दबाकर महामंत्र पूरा करना है।
+                        </li>
+
+                        <li>
+                            <strong>अगर सही है:</strong>
+                            एक जाप तब गिना जाएगा जब पूरा महामंत्र पूरा हो जाएगा।
+                        </li>
+
+                        <li>
+                            <strong>डिलीट बटन:</strong>
+                            अगर आखिरी शब्द गलत है तो उसे डिलीट कर देता है।
+                        </li>
+
+                    </ul>
+
+                </div>
+            
+                
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl shadow p-6 hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                    <div class="flex items-center gap-4 mb-5">
+
+                        <div class="text-4xl bg-blue-100 rounded-xl p-3">
+                            📊
+                        </div>
+
+                        <h3 class="text-2xl font-semibold text-gray-800">
+                            जप संख्या
+                        </h3>
+
+                    </div>
+
+                    <p class="text-gray-600 mb-4">
+                        आप अपनी रोज़ की प्रोग्रेस यहाँ देख सकते हैं।
+                    </p>
+
+                    <ul class="space-y-3 text-gray-600 list-disc list-inside">
+
+                        <li>
+                            <strong>आज</strong> आपने कितनी बार नाम जपा है?
+
+                        </li>
+
+                        <li>
+                            <strong>हर हफ़्ते </strong> कुल मंत्रों की संख्या।
+                        </li>
+
+                        <li>
+                            <strong>हर महीने</strong> हर महीने कुल मंत्रों की संख्या।
+                        </li>
+
+                        <li>
+                            <strong>कुल</strong> मंत्रों की संख्या।
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl shadow p-6 hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                    <div class="flex items-center gap-4 mb-5">
+
+                        <div class="text-4xl bg-blue-100 rounded-xl p-3">
+                            📘
+                        </div>
+
+                        <h3 class="text-2xl font-semibold text-gray-800">
+                            सवाल और जवाब
+                        </h3>
+
+                    </div>
+
+                    <p class="text-gray-600 mb-4">
+                        यह सेक्शन ज्ञान पाने के लिए बनाया गया है।
+                    </p>
+
+                    <ul class="space-y-3 text-gray-600 list-disc list-inside">
+
+                        <li>
+                            सभी टॉपिक की समरी उपलब्ध होगी।
+                        </li>
+
+                        <li>
+                            हर टॉपिक के लिए MCQ की प्रैक्टिस की जा सकती है।
+                        </li>
+
+                        <li>
+                            सही जवाब तुरंत दिखाया जाएगा।
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white rounded-2xl shadow p-6 hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+                    <div class="flex items-center gap-4 mb-5">
+
+                        <div class="text-4xl bg-white rounded-xl p-3">
+                            📝
+                        </div>
+
+                        <h3 class="text-2xl font-semibold text-gray-800">
+                            विवरण
+                        </h3>
+
+                    </div>
+
+                    <p class="text-gray-700 leading-8">
+                        इस बटन पर क्लिक करने से ऐप के मकसद, डेवलपर की प्रोफ़ाइल और ऐप इस्तेमाल करने के डिटेल्ड
+                        इंस्ट्रक्शन के बारे में जानकारी मिलेगी।
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Ads Section -->
+<section class="max-w-7xl mx-auto px-5 pb-10 hidde">
+
+    <div class="bg-blue-50 border border-blue-100 rounded-2xl p-6 text-center">
+
+        <h3 class="text-xl font-semibold text-blue-700 mb-2">
+            📢 Ads Authorization
+        </h3>
+
+        <p class="text-gray-600 mb-4">
+            Verify the authorized advertising domains for this application.
+        </p>
+
+        <a href="app-ads.txt"
+           target="_blank"
+           class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-full transition duration-300">
+
+            📄 View app-ads.txt
+
+        </a>
+
+    </div>
+
+</section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-auto">
+
+        <div class="max-w-7xl mx-auto px-5 py-10 text-center">
+
+            <h2 class="text-2xl font-bold mb-2">
+                📱 Mobile Apps
+            </h2>
+
+            <p class="text-gray-400 mb-6">
+                Educational & Spiritual Mobile Applications
+            </p>
+
+            <div class="border-t border-gray-700 pt-6">
+
+                <p class="text-gray-400">
+                    © 2026 Kangaal Bairagy | Mobile App Developer
+                </p>
+
+
+
+            </div>
+
+        </div>
+
+    </footer>
+    <script>
+        $(document).ready(function () {
+
+            function showLanguage(lang, btn) {
+
+                // Hide all language sections
+                $(".language").addClass("hidden").removeClass("opacity-100");
+
+                // Show selected language
+                $("." + lang).removeClass("hidden");
+
+                setTimeout(function () {
+                    $("." + lang).addClass("opacity-100");
+                }, 20);
+
+                // Remove active button style
+                $(".lang-btn")
+                    .removeClass("bg-blue-600 text-white")
+                    .addClass("bg-gray-200");
+
+                // Add active button style
+                $(btn)
+                    .removeClass("bg-gray-200")
+                    .addClass("bg-blue-600 text-white");
+            }
+
+            // Make function accessible from onclick
+            window.showLanguage = showLanguage;
+
+        });
+    </script>
+
+</body>
+
+</html>
