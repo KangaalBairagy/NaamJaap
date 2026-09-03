@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - [Your App Name]</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --text-color: #1f2937;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--border-color);
+        }
+
+        h1 {
+            color: var(--text-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-top: 24px;
+            font-size: 1.25rem;
+        }
+
+        p, li {
+            font-size: 0.95rem;
+            color: #4b5563;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .effective-date {
+            font-size: 0.85rem;
+            color: #6b7280;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            margin-top: 40px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+            font-size: 0.85rem;
+            text-align: center;
+            color: #9ca3af;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Privacy Policy</h1>
+    <div class="effective-date">Effective date: [Insert Date, e.g., October 24, 2026]</div>
+
+    <p>This Privacy Policy describes how <strong>[Your Developer/Company Name]</strong> ("we", "us", or "our") handles personal information collected through our mobile application, <strong>[Your App Name]</strong> (the "App").</p>
+
+    <h2>1. Information We Collect</h2>
+    <p>We may collect information that you provide directly to us or automatically as you use the App:</p>
+    <ul>
+        <li><strong>Personal Information:</strong> Name, email address, or contact details provided voluntarily (e.g., during sign-up or support requests).</li>
+        <li><strong>Device Information:</strong> Device model, operating system version, unique device identifiers, and network information.</li>
+        <li><strong>Usage Data:</strong> Information about how you interact with our App, including feature usage and crash logs.</li>
+    </ul>
+
+    <h2>2. Third-Party Services & SDKs</h2>
+    <p>Our App may use third-party services that collect information used to identify you. Below are links to the privacy policies of the third-party service providers used by the App:</p>
+    <ul>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Play Services</a></li>
+        <li><a href="https://firebase.google.com/policies/analytics" target="_blank" rel="noopener">Google Analytics for Firebase</a></li>
+        <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank" rel="noopener">AdMob</a></li>
+    </ul>
+
+    <h2>3. How We Use Your Information</h2>
+    <p>We use the collected information for various purposes, including to:</p>
+    <ul>
+        <li>Provide, maintain, and improve the App.</li>
+        <li>Monitor app performance and fix technical issues/crashes.</li>
+        <li>Respond to customer service requests and user feedback.</li>
+        <li>Comply with legal obligations.</li>
+    </ul>
+
+    <h2>4. Data Retention & Deletion</h2>
+    <p>We retain collected personal data for as long as necessary to fulfill the purposes outlined in this policy. Users have the right to request the deletion of their personal information.</p>
+    <p>To request data deletion, please contact us at <strong>[Your Support Email Address]</strong> with the subject line "Data Deletion Request".</p>
+
+    <h2>5. Children’s Privacy</h2>
+    <p>Our App does not knowingly collect or solicit personal information from anyone under the age of 13. If we discover that we have inadvertently collected personal data from a child under 13, we will promptly delete it.</p>
+
+    <h2>6. Security</h2>
+    <p>We value your trust in providing us with your personal information and strive to use commercially acceptable means of protecting it. However, no method of transmission over the internet or electronic storage is 100% secure.</p>
+
+    <h2>7. Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy from time to time. We advise you to review this page periodically for any changes. Changes are effective immediately upon being posted on this page.</p>
+
+    <h2>8. Contact Us</h2>
+    <p>If you have any questions or suggestions regarding this Privacy Policy, please contact us:</p>
+    <ul>
+        <li>Email: <strong>[Your Support Email Address]</strong></li>
+        <li>Website: <strong>[Your Website URL or Developer Link]</strong></li>
+    </ul>
+
+    <footer>
+        &copy; [Year] [Your Developer/Company Name]. All rights reserved.
+    </footer>
+</div>
+
+</body>
+</html>
